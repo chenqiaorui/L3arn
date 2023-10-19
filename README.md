@@ -15,3 +15,6 @@
 - 5 ：[jumpserver资产管理](docs/issue-6.md)
 
 - 6 ：[Zabbix监控](docs/issue-7.md)
+
+- 7 ：[Go入门指南](docs/issue-8.md)
+
