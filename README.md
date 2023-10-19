@@ -9,3 +9,5 @@
 - 2 ：[阅读英文文档翻译工具](docs/issue-2.md)
 
 - 3 ：[vpn工具](docs/issue-3.md)
+
+- 4 ：[Linux命令](docs/issue-5.md)
