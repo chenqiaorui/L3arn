@@ -7,6 +7,8 @@
 
 - 在线 [ChatGPT](http://4.194.7.40:50000/#/chat/1002)
 
+- 搜索技巧：搜索引擎列出结果后，可打开多个页签。搜寻原则遵循：百度 - bing(国内) - bing国际版 - google
+
 ## 2023
 
 - 1 ：[Docker&Kubernetes小记](docs/issue-1.md)
