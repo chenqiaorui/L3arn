@@ -13,3 +13,5 @@
 - 4 ：[Linux命令](docs/issue-5.md)
 
 - 5 ：[jumpserver资产管理](docs/issue-6.md)
+
+- 6 ：[Zabbix监控](docs/issue-7.md)
