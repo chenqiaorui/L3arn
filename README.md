@@ -11,3 +11,5 @@
 - 3 ：[vpn工具](docs/issue-3.md)
 
 - 4 ：[Linux命令](docs/issue-5.md)
+
+- 5 ：[jumpserver资产管理](docs/issue-6.md)
