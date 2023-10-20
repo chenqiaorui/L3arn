@@ -27,3 +27,5 @@
 
 - 8 ：[虚拟化技术](docs/issue-9.md)
 
+- 9 ：[AWS](docs/issue-10.md)
+
