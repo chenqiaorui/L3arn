@@ -25,3 +25,5 @@
 
 - 7 ：[Go入门指南](docs/issue-8.md)
 
+- 8 ：[虚拟化技术](docs/issue-9.md)
+
