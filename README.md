@@ -33,3 +33,5 @@
 
 - 11 ：[Linux性能工具](docs/issue-13.md)
 
+- 12 ：[AI工具汇总](docs/issue-14.md)
+
