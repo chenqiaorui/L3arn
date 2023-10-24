@@ -25,3 +25,13 @@ AWS云服务官网(https://aws.amazon.com/cn/)
 
 ### S3 存储桶
 
+### CloundFront 全球内容分发网络
+创建
+
+- 源站，可以是S3桶地址、ELB.......
+
+创建成功后将会分配一个加速域名
+
+### Route 53 DNS服务器
+
+
