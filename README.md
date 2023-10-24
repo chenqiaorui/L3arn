@@ -9,6 +9,8 @@
 
 - [在线ChatGPT](http://4.194.7.40:50000/#/chat/1002)  ChatGPT能让我们以口语化的方式进行提问，获得问题的参考思路。
 
+- [在线国内版ChatGPT](https://cn.noteai.com/) 能够列出6篇文章及总结式回答。
+
 ## 2023
 
 - 1 ：[Docker&Kubernetes小记](docs/issue-1.md)
