@@ -44,3 +44,5 @@ gui-config.json模板：
 ```
 
 2. 供应商
+
+参考：https://github.com/haoel/haoel.github.io
