@@ -35,3 +35,5 @@
 
 - 12 ：[AI工具汇总](docs/issue-14.md)
 
+- 13 ：[批量管理机器](docs/issue-15.md)
+
