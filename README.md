@@ -37,3 +37,5 @@
 
 - 13 ：[批量管理机器](docs/issue-15.md)
 
+- 14 ：[Devops Exercise](docs/issue-16.md)
+
