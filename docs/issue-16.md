@@ -23,3 +23,7 @@
   3.被动断开方，设置FIN=1, Seq=z, Ack=x+1
   
   4.主动断开方，ACK=1,Seq=x+1, Ack=z+1，处于TIME_WAIT, 经过2ms变成CLOSE, 被动方也变成CLOSE
+
+- 什么是SSL?
+
+  Security Socket Layer
