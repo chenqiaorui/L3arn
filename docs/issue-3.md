@@ -1,5 +1,16 @@
 ## vpn工具
 
+国外学习网站
+- [medium](https://medium.com/) 博客和论文，还有 Blogspot
+- [SlideShare](https://www.slideshare.net/) 技术文档和PPT
+- Reddit 是一个聚合网站，一个新闻和文章的集散地
+- Pinterest 和 Instagram 有很多不错的图片和视频新闻
+
+## 科学上网两种方式
+
+供应商购买账号 或 自建
+
+1. 自建
 Shadowsocks
 
 要求：
@@ -31,3 +42,5 @@ gui-config.json模板：
 }
 
 ```
+
+2. 供应商
