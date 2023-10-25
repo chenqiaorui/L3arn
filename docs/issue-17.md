@@ -1,6 +1,6 @@
-Q: centos 安装docker
+A: centos 安装docker
 
-以下是在CentOS操作系统上安装Docker的步骤：
+Q: 以下是在CentOS操作系统上安装Docker的步骤：
 
 1. 卸载旧版本的Docker（如果安装过）
 
