@@ -13,6 +13,8 @@
 
 - [在线国内版ChatGPT](https://cn.noteai.com/) 能够列出6篇文章及总结式回答。
 
+- 学习技巧：利用GPT了解、学习一个新知识，如 [安装使用Docker](docs/issue-17.md)
+
 ## 2023
 
 - 1 ：[Docker&Kubernetes小记](docs/issue-1.md)
