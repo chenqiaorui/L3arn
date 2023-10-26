@@ -45,3 +45,7 @@
 
 - 14 ：[Devops Exercise](docs/issue-16.md)
 
+- 15 ：[Linux df命令](docs/运维/issue-1.md)
+
+- 16 ：[虚拟化技术历程](docs/运维/issue-2.md)
+
