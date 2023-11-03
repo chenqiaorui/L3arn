@@ -3,14 +3,15 @@
 
 1. 查看分区唯一id
 
-lsblk -f
+`lsblk -f`
 
 2. 查看分区信息
 
-fdisk -l
+`fdisk -l`
 
 3. 给/dev/sda分区
-   
+
+```   
 fdisk /dev/sda # 分区
 
   输入m查看帮助
@@ -27,13 +28,14 @@ mkdir /shuju
 mount /dev/sda3 /shuju # 临时挂载，重启后失效，需要永久挂载
 
 umount /shuju # 卸载
+```
 
 4. 永久挂载
-
+```
 vi /etc/fstab
 
 UUID=97XXX /shuju  xfs defaults 0 0
 
 mount -a # 使上面的配置立即生效
-
+```
 
