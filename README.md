@@ -54,3 +54,5 @@
 - 18 ：[微信小程序](docs/微信小程序/issue-1.md)
 
 - 19 ：[Linux rc.local文件](docs/运维/issue-4.md)
+
+- 20 ：[Linux 磁盘分区挂载](docs/运维/issue-5.md)
