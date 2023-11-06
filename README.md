@@ -58,3 +58,7 @@
 - 20 ：[Linux 磁盘分区挂载](docs/运维/issue-5.md)
 
 - 21 ：[Linux 网络工具](docs/运维/issue-6.md)
+
+- 22 ：[英语学习资源](docs/英语/issue-1.md)
+
+- 23 ：[英文句子](docs/英语/issue-2.md)
