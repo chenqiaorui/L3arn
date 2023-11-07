@@ -36,7 +36,7 @@
 
 #### 媒体
 - [Medium](https://www.medium.com/) 上有很多非常棒的文章，我经常去翻阅大神写的技术、设计方面的文章，也有很多关于生活，可以帮助自己发散思维，改善自己生活、提高执行效率的好文。
-- [Hacker News Hacker News[(https://news.ycombinator.com/)是互联网人不能错过的资讯站
+- [Hacker News Hacker News](https://news.ycombinator.com/)是互联网人不能错过的资讯站
 - [Reddit](https://www.reddit.com/?rdt=64776) 号称是互联网的Front Page，新鲜事、八卦应有尽有
   
 ### 口语篇
