@@ -101,6 +101,8 @@ Page({
 
 更多的组件可以参考 [小程序的组件](https://developers.weixin.qq.com/miniprogram/dev/component/)
 
+## wxss样式
+
 ## 一个例子 HelloWorld
 
 第一步，请前往https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html 微信开发者工具下载页面根据自己的操作系统下载对应的安装包进行安装。
