@@ -2,6 +2,8 @@
 
 知识积累分享
 
+以 Visual Studio模式打开本仓库：https://github1s.com/chenqiaorui/L3arn
+
 ## 学习守则
 - 学习知识：极简主义
   
