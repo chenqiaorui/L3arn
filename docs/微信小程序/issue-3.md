@@ -59,8 +59,10 @@ json文件语法：{}包裹；key要加双引号；value要加双引号，加单
 
 循环显示列表数据
 
+```
 <text wx:for={{arr}}>{{index}} : {{item.message}}</text>  数组当前项下标为index, 当前数组项为 item
-   
+```
+
 3. app.js
 
 ```
