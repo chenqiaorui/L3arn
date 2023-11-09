@@ -30,8 +30,20 @@ json文件语法：{}包裹；key要加双引号；value要加双引号，加单
 标签必须闭合；标签属性大小写敏感，如class和CLASS 
 
 数据绑定：wxml页面的数据可能是动态的，如用户操作后页面数据变动。数据绑定写法：<text>{{time1}}<text>，time1的值从app.js文件的data取。
+
+属性绑定：属性也可以是动态的，但需要用双引号。如 class="{{color}}"；属性可以条件判断
+
 ```
-<text>pages/wxml/index.wxml</text>
+<view wx:if="{{length > 5}}"> 1 </view>
+<view wx:elif="{{length > 2}}"> 2 </view>
+<view wx:else> 3 </view>
+```
+
+数据可以进行逻辑运算。如<text>{{ a === 10? "变量 a 等于10": "变量 a 不等于10"}}</text>；或者字符串拼接 {{"hello " + name}}
+
+```
+<text>{{time1}}<text>
+<text class="{{color}}">aa<text>
 ```
    
 3. app.js
