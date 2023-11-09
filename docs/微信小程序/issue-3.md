@@ -39,3 +39,27 @@ Page({
 <map longitude="广州经度" latitude="广州纬度"></map>  界面显示地图，且一开始显示广州经纬度；再加属性bindmarkertap="markertap" 事件。
 
 更多的组件可以参考 [小程序的组件](https://developers.weixin.qq.com/miniprogram/dev/component/)
+
+## 一个例子 HelloWorld
+
+第一步，请前往https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html 微信开发者工具下载页面根据自己的操作系统下载对应的安装包进行安装。
+
+第二步，打开微信开发者工具，选择新建小程序项目，我们先不需理解AppID的概念，新建项目时选择无AppID，并取消勾选“建立普通快速启动模板”的选项。
+
+最后，在根目录下创建app.json
+
+```
+{
+
+  "pages": ["pages/index/index"]
+
+}
+```
+
+在根目录下新建pages目录，然后在pages目录下新建index目录，接着在index目录下创建两个文件index.wxml和index.js。
+
+index.wxml的内容如下所示。<text>Hello World</text>
+
+index.js的内容如下所示。Page({})
+
+通过编写以上短短的几行代码，微信开发者工具的模拟器界面上显示出Hello World。
