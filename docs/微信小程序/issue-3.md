@@ -31,12 +31,21 @@ json文件语法：{}包裹；key要加双引号；value要加双引号，加单
 
 数据绑定：wxml页面的数据可能是动态的，如用户操作后页面数据变动。数据绑定写法：<text>{{time1}}<text>，time1的值从app.js文件的data取。
 
-属性绑定：属性也可以是动态的，但需要用双引号。如 class="{{color}}"；属性可以条件判断
+属性绑定：属性也可以是动态的，但需要用双引号。如 class="{{color}}"；属性可以条件判断；
 
 ```
 <view wx:if="{{length > 5}}"> 1 </view>
 <view wx:elif="{{length > 2}}"> 2 </view>
 <view wx:else> 3 </view>
+```
+如果需要一下子判断多个组件这个用<block>包裹
+
+```
+<block wx:if="{{a>2}}">
+<text>a</text>
+<text>b</text>
+</block>
+
 ```
 
 数据可以进行逻辑运算。如<text>{{ a === 10? "变量 a 等于10": "变量 a 不等于10"}}</text>；或者字符串拼接 {{"hello " + name}}
@@ -44,14 +53,27 @@ json文件语法：{}包裹；key要加双引号；value要加双引号，加单
 ```
 <text>{{time1}}<text>
 <text class="{{color}}">aa<text>
+<text>{{ a === 10? "变量 a 等于10": "变量 a 不等于10"}}</text>
+<text>{{"hello " + name}}</text>
 ```
+
+循环显示列表数据
+
+<text wx:for={{arr}}>{{index}} : {{item.message}}</text>  数组当前项下标为index, 当前数组项为 item
    
 3. app.js
 
 ```
 App({
   data: {
-    time1: (new Date()).toString()
+    time1: (new Date()).toString(),
+    arr: [{
+         message: 'a'
+       },
+       {
+         message: 'b'
+       }
+    ]
   },
   onLaunch: function () {
     // 页面渲染后触发
