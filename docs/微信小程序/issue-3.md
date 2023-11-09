@@ -1,16 +1,29 @@
 ## 小程序tip
 
 - 根路径下的4个文件加载顺序：app.json - app.wxml - app.wxss - app.js
+
 - 根路径下的4个文件作用：app.json 公共配置；app.wxml与html相似；app.wxss是样式文件；app.js负责app.wxml的交互逻辑
-- app.json文件内容解析：Page()是一个函数，里面的参数说明页面在哪些路径下，排在第一个的会被最先渲染
+
 
 ## 文件解析
 
-1. app.json
+1. app.json  静态配置文件
+
+json文件语法：{}包裹；key要加双引号；value要加双引号，加单引号会报错。
+
 ```
-Page({
-  "pages":["pages/index/index"]
-})
+{
+  "pages":[
+    "pages/index/index",    排在第一个的会被最先渲染
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",  导航栏文本
+    "navigationBarTextStyle":"black"
+  }
+}
 ```  
 2. app.js
 
