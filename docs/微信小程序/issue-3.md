@@ -9,7 +9,7 @@
 
 1. app.json  静态配置文件
 
-json文件语法：{}包裹；key要加双引号；value要加双引号，加单引号会报错。
+json文件语法：{}包裹；key要加双引号；value要加双引号，加单引号会报错；json文件内加注释报错；json的语法不同于javascript的对象写法。
 
 ```
 {
@@ -24,11 +24,23 @@ json文件语法：{}包裹；key要加双引号；value要加双引号，加单
     "navigationBarTextStyle":"black"
   }
 }
-```  
-2. app.js
+```
+2. app.wxml
+
+标签必须闭合；标签属性大小写敏感，如class和CLASS 
+
+数据绑定：wxml页面的数据可能是动态的，如用户操作后页面数据变动。数据绑定写法：<text>{{time1}}<text>，time1的值从app.js文件的data取。
+```
+<text>pages/wxml/index.wxml</text>
+```
+   
+3. app.js
 
 ```
 App({
+  data: {
+    time1: (new Date()).toString()
+  },
   onLaunch: function () {
     // 页面渲染后触发
   }
