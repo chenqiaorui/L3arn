@@ -47,7 +47,7 @@ App({
 })
 ```
 
-3. 日志页面logs.js
+4. 日志页面/pages/logs/logs.js
 ```
 Page({
   data: { // 参与页面渲染的数据，与wxml一起联动渲染页面
