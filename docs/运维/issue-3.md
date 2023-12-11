@@ -25,6 +25,6 @@
 ## iptables管理
 iptables -nvL # 显示当前iptables规则
 
-service iptables save # 此命令会将 iptables -nvL显示规则保存到 /etc/sysconfig/iptables, 执行此命令前需要备份iptables文件
+service iptables save # 此命令会将 iptables -nvL显示规则保存到 /etc/sysconfig/iptables, 执行此命令前需要备份iptables文件，如 cp /etc/sysconfig/iptables /tmp/iptablesbak
 
 service iptables reload # reload /etc/sysconfig/iptables 下的规则
