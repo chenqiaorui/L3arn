@@ -69,4 +69,6 @@
 
 - 25 ：[微信小程序实战](docs/微信小程序/issue-2.md)
 
+- 26 ：[Kubernetes原理](docs/运维/issue-26.md)
+
 
