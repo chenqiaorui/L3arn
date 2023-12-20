@@ -71,4 +71,6 @@
 
 - 26 ：[Kubernetes原理](docs/运维/issue-26.md)
 
+- 27 ：[运维随笔](docs/运维/issue-7.md)
+
 
