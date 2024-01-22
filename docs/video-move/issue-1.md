@@ -9,3 +9,5 @@
 科技文章翻译：https://github.com/linexjlin/GPTs/blob/main/prompts/%E7%A7%91%E6%8A%80%E6%96%87%E7%AB%A0%E7%BF%BB%E8%AF%91.md
 
 提示工程：https://github.com/dair-ai/Prompt-Engineering-Guide
+
+ChatGPT 中文调教指南：https://github.com/linexjlin/GPTs/blob/main/prompts/Writing%20Assistant.md
