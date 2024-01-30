@@ -18,6 +18,8 @@
 - 学习技巧：利用GPT了解、学习一个新知识，如 [安装使用Docker](docs/issue-17.md)
 
 - Github Desktop 设置新版 Clash 代理 (https://www.zzy2001.com/index.php/archives/31/)
+
+- 切割大文件进行传输 (https://zahui.fan/posts/lra06cl1/)
 ## 2023
 
 - 1 ：[Docker&Kubernetes小记](docs/issue-1.md)
