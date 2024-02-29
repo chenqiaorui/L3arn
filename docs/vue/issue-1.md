@@ -6,3 +6,7 @@ npm config set registry https://registry.npmmirror.com
 Next
 
 https://nextjs.frontendx.cn/docs/#%E5%AE%89%E8%A3%85
+
+tailwindcss
+
+安装使用：https://tailwindcss.com/docs/installation
