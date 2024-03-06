@@ -11,9 +11,7 @@
 
 - 搜索技巧：搜索引擎列出结果后，可打开多个页签同时进行参考，便于全面了解，得到解决办法。搜寻原则遵循：百度 - bing(国内) - bing国际版 - google
 
-- [在线ChatGPT](http://4.194.7.40:50000/#/chat/1002)  ChatGPT能让我们以口语化的方式进行提问，获得问题的参考思路。
-
-- [在线国内版ChatGPT](https://cn.noteai.com/) 能够列出6篇文章及总结式回答。
+- [在线ChatGPT](https://chat04.a1r.cc/#/chat/1002)  ChatGPT能让我们以口语化的方式进行提问，获得问题的参考思路。[更多站点](https://github.com/xx025/carrot)
 
 - 学习技巧：利用GPT了解、学习一个新知识，如 [安装使用Docker](docs/issue-17.md)
 
