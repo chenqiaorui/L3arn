@@ -61,3 +61,21 @@ pages/index/index.wxml
   padding:5px;
 }
 ```
+
+### js 文件
+
+对于小程序中的每个页面，都需要在页面对应的 js 文件中进行注册。
+
+使用 Page 构造器注册页面：
+
+```
+//index.js
+Page({
+  data: {
+    text: "This is page data."
+  },
+  onLoad: function(options) {
+    // 页面创建时执行
+  }
+})
+```
