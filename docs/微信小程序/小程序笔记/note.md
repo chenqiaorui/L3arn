@@ -69,6 +69,144 @@ pages/index/index.wxml
 - <button> 包含 wx:if 属性 及 {{ }} 表达
 - <text>表示一段行内文本，类似于 HTML 语言的<span>标签
 
+#### 1.WXML 渲染语法
+
+微信 API 提供的数据，就通过 WXML 的渲染语法展现在页面上。比如，home.js里面的数据源是一个数组。
+
+```
+Page({
+  data: {
+    items: ['事项 A', '事项 B', '事项 C']
+  }
+});
+```
+
+Page()的参数配置对象的data.items属性是一个数组。通过数据绑定机制，页面可以读取全局变量items，拿到这个数组。
+
+拿到数组以后，怎样将每一个数组成员展现在页面上呢？WXML 的数组循环语法，就是一个很简便的方法。
+
+home.wxml文件：
+
+```
+<view>
+  <text class="title" wx:for="{{items}}">
+    {{index}}、 {{item}}
+   </text>
+</view>
+```
+
+<text>标签的wx:for属性，表示当前标签（<text>）启用数组循环，处理items数组。数组有多少个成员，就会生成多少个<text>。渲染后的页面结构如下。
+
+```
+<view>
+  <text>...</text>
+  <text>...</text>
+  <text>...</text>
+</view>
+```
+
+在循环体内，当前数组成员的位置序号（从0开始）绑定变量index，成员的值绑定变量item。
+
+#### 2.
+
+页面渲染用到的外部数据，如果每次都从服务器或 API 获取，有时可能会比较慢，用户体验不好。
+
+小程序允许将一部分数据保存在客户端（即微信 App）的本地储存里面（其实就是自定义的缓存）。下次需要用到这些数据的时候，就直接从本地读取，这样就大大加快了渲染。本节介绍怎么使用客户端数据储存。
+
+home.wxml文件：
+
+```
+<view>
+  <text class="title" wx:for="{{items}}">
+    {{index}}、 {{item}}
+   </text>
+   <input placeholder="输入新增事项" bind:input="inputHandler"/>
+   <button bind:tap="buttonHandler">确定</button>
+</view>
+```
+
+新增了一个输入框和一个按钮，用来接受用户的输入。背后的意图是，用户通过输入框，为items数组加入新成员。
+
+输入框有一个input事件的监听函数inputHandler（输入内容改变时触发），按钮有一个tap事件的监听函数buttonHandler（点击按钮时触发）。这两个监听函数负责处理用户的输入。
+
+home.js文件：
+
+```
+Page({
+  data: {
+    items: [],
+    inputValue: ''
+  },
+  inputHandler(event) {
+    this.setData({
+      inputValue: event.detail.value || ''
+    });
+  },
+  buttonHandler(event) {
+    const newItem = this.data.inputValue.trim();
+    if (!newItem) return;
+    const itemArr = [...this.data.items, newItem];
+    wx.setStorageSync('items', itemArr);
+    this.setData({ items: itemArr });
+  },
+  onLoad() {
+    const itemArr = wx.getStorageSync('items') || []; 
+    this.setData({ items: itemArr });
+  }
+});
+```
+
+输入框监听函数inputHandler()只做了一件事，就是每当用户的输入发生变化时，先从事件对象event的detail.value属性上拿到输入的内容，然后将其写入全局变量inputValue。如果用户删除了输入框里面的内容，inputValue就设为空字符串。
+
+按钮监听函数buttonHandler()是每当用户点击提交按钮，就会执行。它先从inputValue拿到用户输入的内容，确定非空以后，就将其加入items数组。然后，使用微信提供的wx.setStorageSync()方法，将items数组存储在客户端。最后使用this.setData()方法更新一下全局变量items，进而触发页面的重新渲染。
+
+wx.setStorageSync()方法属于小程序的客户端数据储存 API，用于将数据写入客户端储存。它接受两个参数，分别是键名和键值。与之配套的，还有一个wx.getStorageSync()方法，用于读取客户端储存的数据。它只有一个参数，就是键名。这两个方法都是同步的。
+
+Page()的参数配置对象还有一个onLoad()方法。该方法属于页面的生命周期方法，页面加载后会自动执行该方法。它只执行一次，用于页面初始化，这里的意图是每次用户打开页面，都通过wx.getStorageSync()方法，从客户端取出以前存储的数据，显示在页面上。
+
+客户端储存是不可靠的，随时可能消失（比如用户清理缓存）。用户换了一台手机，或者本机重装微信，原来的数据就丢失了。所以，它只适合保存一些不重要的临时数据，最常见的用途一般就是作为缓存，加快页面显示。
+
+#### 3.远程数据请求
+
+程序可以从外部服务器读取数据，也可以向服务器发送数据。
+
+微信规定，只有后台登记过的服务器域名，才可以进行通信。不过，开发者工具允许开发时放松这个限制。
+
+我们在本地启动一个开发服务器。为了简单起见，我选用了 json-server(https://www.npmjs.com/package/json-server) 作为本地服务器，它的好处是只要有一个 JSON 数据文件，就能自动生成 RESTful 接口。
+
+新建一个数据文件db.json
+
+```
+{
+  "items": ["事项 A", "事项 B", "事项 C"]
+}
+
+```
+
+执行：npx json-server db.json
+
+home.js文件：
+
+```
+Page({
+  data: { items: [] },
+  onLoad() {
+    const that = this;
+    wx.request({
+      url: 'http://localhost:3000/items',
+      success(res) {
+        that.setData({ items: res.data });
+      }
+    });
+  }
+});
+```
+
+生命周期方法onLoad()会在页面加载后自动执行，这时就会执行wx.request()方法去请求远程数据。如果请求成功，就会执行回调函数succcess()，更新页面全局变量items，从而让远程数据显示在页面上。
+
+
+wx.request()方法就是小程序的网络请求 API，通过它可以发送 HTTP 请求。它的参数配置对象最少需要指定url属性（请求的网址）和succcess()方法（服务器返回数据的处理函数）。
+
 ### WXSS 样式
 
 全局和局部样式：定义在 app.wxss 中的样式为全局样式，作用于每一个页面。在 page 的 wxss 文件中定义的样式为局部样式，只作用在对应的页面，并会覆盖 app.wxss 中相同的选择器。
@@ -250,3 +388,5 @@ Page()方法的参数配置对象里面，定义了buttonHandler()，这就是<b
 [微信小程序入门教程之二：页面样式](https://www.ruanyifeng.com/blog/2020/10/wechat-miniprogram-tutorial-part-two.html)
 
 [微信小程序入门教程之三：脚本编程](https://www.ruanyifeng.com/blog/2020/10/wechat-miniprogram-tutorial-part-three.html)
+
+微信小程序入门教程之四：API 使用(https://www.ruanyifeng.com/blog/2020/11/wechat-miniprogram-tutorial-part-four.html)
