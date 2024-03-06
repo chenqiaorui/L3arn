@@ -389,4 +389,4 @@ Page()方法的参数配置对象里面，定义了buttonHandler()，这就是<b
 
 [微信小程序入门教程之三：脚本编程](https://www.ruanyifeng.com/blog/2020/10/wechat-miniprogram-tutorial-part-three.html)
 
-微信小程序入门教程之四：API 使用(https://www.ruanyifeng.com/blog/2020/11/wechat-miniprogram-tutorial-part-four.html)
+[微信小程序入门教程之四：API 使用](https://www.ruanyifeng.com/blog/2020/11/wechat-miniprogram-tutorial-part-four.html)
