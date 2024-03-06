@@ -4,4 +4,4 @@
 
 或 
 
-[角色扮演提示词](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)https://github.com/PlexPt/awesome-chatgpt-prompts-zh)
+[角色扮演提示词](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)
