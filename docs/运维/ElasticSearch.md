@@ -72,7 +72,8 @@ Documents(文档) -> Row
 Fields(字段) -> Col
 ```
 
-#### 创建索引，即创建数据库
+#### 索引操作
+##### 创建索引，即创建数据库
 
 ```
 PUT {user}
@@ -106,6 +107,14 @@ GET _cat/indices?v
 - docs.deleted：文档删除状态（逻辑删除）
 - store.size：主分片和副分片整体占空间大小
 - pri.store.size：主分片占空间大小
+
+#### 查看单个索引
+
+GET {user}
+
+#### 删除单个索引
+
+DELETE {user}
 
 ## 参考
 
