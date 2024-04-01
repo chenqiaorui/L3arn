@@ -2,18 +2,17 @@
 
 
 
-## 用新建es用户启动服务
+## 新建用户启动服务
 
 ```
-useradd es
+useradd {user}
 
-passwd es
+passwd {user}
 
-# 目录授权给es用户
-chown -R es /usr/local/elastic-stack/es
+# 目录授权给用户
+chown -R {user} {path}
 
-# 切换到用户启动服务
-su es
+# 切换到用户
+su {user}
 
-./bin/elasticsearch
 ```
