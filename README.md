@@ -13,6 +13,8 @@
 
 - [在线ChatGPT](https://chat04.a1r.cc/#/chat/1002)  ChatGPT能让我们以口语化的方式进行提问，获得问题的参考思路。[更多站点](https://github.com/xx025/carrot)
 
+- [秘塔AI](https://metaso.cn/)  适用于国内资源搜索
+
 - 学习技巧：利用GPT了解、学习一个新知识，如 [安装使用Docker](docs/issue-17.md)
 
 - Github Desktop 设置新版 Clash 代理 (https://www.zzy2001.com/index.php/archives/31/)
