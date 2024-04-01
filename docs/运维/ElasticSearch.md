@@ -56,8 +56,56 @@ i18n.locale: "zh-CN"
 server.host: "0.0.0.0"
 ```
 
+## ElasticSearch基本操作
 
+### 数据格式
 
+把 ElasticSearch 和 Mysql做对比：
+
+```
+ElasticSearch -> Mysql
+
+Index(索引) -> 数据库
+
+Documents(文档) -> Row
+
+Fields(字段) -> Col
+```
+
+#### 创建索引，即创建数据库
+
+```
+PUT {user}
+```
+
+发送请求后返回：
+
+```
+{
+  "acknowledged": true,  # true 操作成功
+  "shards_acknowledged": true, # 分片操作成功
+  "index": "user" # 索引名称
+}
+```
+
+#### 查看所有索引
+
+GET _cat/indices?v
+
+注释：
+
+- _cat：表示查看的意思；
+- indices： 表示索引
+- health：当前服务器健康状态：green(集群完整)、yellow(单点正常、集群不完整)、red(单点不正常)
+- status：索引打开、关闭状态
+- index：索引名
+- uuid：索引统一编号
+- pri：主分片数量
+- rep：副本数量
+- docs.count：可用文档数量
+- docs.deleted：文档删除状态（逻辑删除）
+- store.size：主分片和副分片整体占空间大小
+- pri.store.size：主分片占空间大小
 
 ## 参考
 
