@@ -2,10 +2,9 @@
 
 https://youyq.pythonanywhere.com/software/
 
-## 自动记录鼠标点击
 
-表头| 表头
+软件名称| 软件简介
 -|-
-单元格|单元格
+[CCleaner](https://www.ccleaner.com/zh-cn/ccleaner)|查找大文件
 单元格|单元格
 单元格|单元格
