@@ -12,6 +12,6 @@ https://youyq.pythonanywhere.com/software/
 [Rufus](https://rufus.ie/zh/)|	系统制作工具
 [ZEN](https://github.com/anfragment/zen)|广告拦截器
 [内存管理](https://github.com/henrypp/memreduct)|内存优化
-[Windows 和 Office 激活工具](https://github.com/massgravel/Microsoft-Activation-Scripts)| office和windows激活开源脚本
+[Windows 和 Office 激活工具](https://github.com/massgravel/Microsoft-Activation-Scripts)| office和windows激活开源脚本、windows iso下载
 
 
