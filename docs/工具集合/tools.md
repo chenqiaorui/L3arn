@@ -10,4 +10,5 @@ https://youyq.pythonanywhere.com/software/
 [OBS Studio](https://obsproject.com/)|开源的视频直播/视频录制/屏幕录制工具
 [Office Tool Plus](https://otp.landian.vip/zh-cn/)|	Office 部署工具，下载、安装、激活以及管理 Office
 [Rufus](https://rufus.ie/zh/)|	系统制作工具
+[ZEN](https://github.com/anfragment/zen)|广告拦截器
 
