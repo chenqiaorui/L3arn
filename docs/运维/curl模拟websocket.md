@@ -1,0 +1,1 @@
+curl --no-buffer -H 'Connection: keep-alive, Upgrade' -H 'Upgrade: websocket' -v -H 'Sec-WebSocket-Version: 13' -H 'Sec-WebSocket-Key: websocket' -H 'Host: www.example.com' https://ip/api/WebSocket/c5b-8d87-c94b5514f83a ws | od -t c
