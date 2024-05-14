@@ -1,0 +1,13 @@
+### 扩容已有分区磁盘步骤
+
+```
+# 查看分区信息，dos表示MBR，gpt表示GPT分区
+fdisk -l 
+
+# 扩容分区
+growpart /dev/vdb 1
+
+# 扩容文件系统
+xfs_growfs /mnt
+```
+  
