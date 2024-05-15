@@ -22,6 +22,7 @@
 # 拒绝所有其他流量
 -A INPUT -j REJECT --reject-with icmp-host-prohibited
 -A FORWARD -j REJECT --reject-with icmp-host-prohibited
+COMMIT
 ```
 
 修改配置后软重启：systemcl reload iptables
