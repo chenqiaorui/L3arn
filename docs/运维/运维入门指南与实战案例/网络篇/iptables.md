@@ -1,5 +1,6 @@
-编辑配置：/etc/sysconfig/iptables, 常见的iptables规则模板：
+## 1. iptables规则模板
 
+编辑配置：/etc/sysconfig/iptables
 ```
 ## sample
 ##
@@ -25,16 +26,15 @@
 COMMIT
 ```
 
+## 2.命令
 修改配置后软重启：systemcl reload iptables
 
 查看状态：systemcl status iptables
 
-场景分析：
-当192.168.2.22开启iptables，放行端口81，但81端口无服务运行
-
-192.168.2.22机器：
-
-telnet  192.168.2.22 81，返回 Connection refused，表明无服务运行
-
-telnet  192.168.2.22 82，返回 Not route to host，表明端口未放行
-
+### 3.场景分析：
+```
+3.1 假设192.168.2.22开启iptables，放行端口81，但81端口无服务运行；不放行82端口；
+3.2 用192.168.2.23 机器 telnet 192.168.2.22 的81和82端口；
+3.3 telnet  192.168.2.22 81，返回 Connection refused，表明无服务运行
+3.4 telnet  192.168.2.22 82，返回 Not route to host，表明端口未放行
+```
