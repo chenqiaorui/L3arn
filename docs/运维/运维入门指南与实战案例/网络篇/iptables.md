@@ -1,4 +1,28 @@
-编辑配置：/etc/sysconfig/iptables
+编辑配置：/etc/sysconfig/iptables, 常见的iptables规则模板：
+
+```
+## sample
+##
+*filter
+:INPUT DROP [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+# 允许所有回环流量（loopback traffic）和 ICMP 测试
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+
+# 开放 SSH 端口
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 22 -j ACCEPT
+
+# 开放 HTTP、HTTPS 端口
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPT
+
+# 拒绝所有其他流量
+-A INPUT -j REJECT --reject-with icmp-host-prohibited
+-A FORWARD -j REJECT --reject-with icmp-host-prohibited
+```
 
 修改配置后软重启：systemcl reload iptables
 
@@ -9,7 +33,7 @@
 
 192.168.2.22机器：
 
-telnet  192.168.2.22 81，返回 Connection refused
+telnet  192.168.2.22 81，返回 Connection refused，表明无服务运行
 
-telnet  192.168.2.22 82，返回 Not route to host
+telnet  192.168.2.22 82，返回 Not route to host，表明端口未放行
 
