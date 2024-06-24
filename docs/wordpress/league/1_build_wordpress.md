@@ -23,3 +23,5 @@
 17.  product describe; product pictures; customer views;
 18.  waimao avoid; https://zhuanlan.zhihu.com/p/685382176;
 19.  data analyse after build your wordpress;
+20.  backup data; cloudflare free cdn;
+21.  upload your images; press it;
