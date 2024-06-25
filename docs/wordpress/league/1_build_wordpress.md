@@ -25,3 +25,7 @@
 19.  data analyse after build your wordpress;
 20.  backup data; cloudflare free cdn;
 21.  upload your images; press it;
+22.  logo/插画/how to get web pages pictures?just get pages from theme?
+23.  trouble? host and theme? how to editor? tourtise.
+24.  foregien email; vpn intro;
+25.  you shouldn't beian
