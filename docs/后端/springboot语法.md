@@ -20,3 +20,11 @@ public String list(@RequestParam(value = "pageSize", defaultValue = "5") Integer
   return 'xx'
 }
 ```
+
+3.查
+
+@RequestMapping()
+@ResponseBody
+public CommentResult<Order> list() {
+  
+}
