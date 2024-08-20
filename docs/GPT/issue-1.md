@@ -16,3 +16,6 @@ gpt4: https://gpt4o.so/zh-CN
 
 
 大模型api调用：https://www.rockai.online/
+
+Stable Diffusion 3 AI 图像生成器免费在线使用：https://stablediffusion3.net/zh-CN/app
+
