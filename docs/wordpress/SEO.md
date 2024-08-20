@@ -24,3 +24,8 @@ https://www.wpbeginner.com/wp-tutorials/how-to-do-an-seo-competitor-analysis-in-
 11. sitemap展示网站结构
 12. robots.txt定义哪些资源可被抓
 13. 
+
+
+### sitemap.xml
+
+https://juejin.cn/post/7072291456462880782?searchId=202408201640092F36744183728F05F83B
