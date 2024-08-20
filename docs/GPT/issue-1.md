@@ -9,3 +9,7 @@ https://www.riffusion.com/riffs/7d655db8-cbc0-4de2-badf-987a4b15c04a
 免费gpt:  https://chat04.a1r.cc/#/chat/1715926280805
 
 gpt4: https://gpt4o.so/zh-CN
+
+## gpt工具
+
+穿搭评价：https://outfitify.tech/
