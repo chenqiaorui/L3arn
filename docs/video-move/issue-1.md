@@ -11,3 +11,5 @@
 提示工程：https://github.com/dair-ai/Prompt-Engineering-Guide
 
 ChatGPT 中文调教指南：https://github.com/linexjlin/GPTs/blob/main/prompts/Writing%20Assistant.md
+
+pear-rec(梨子 rec) 是一个跨平台的截图、录屏、录音、录像软件: https://github.com/027xiguapi/pear-rec/
