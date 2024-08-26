@@ -29,3 +29,7 @@ https://www.wpbeginner.com/wp-tutorials/how-to-do-an-seo-competitor-analysis-in-
 ### sitemap.xml
 
 https://juejin.cn/post/7072291456462880782?searchId=202408201640092F36744183728F05F83B
+
+## SEO工具
+
+https://aitdk.com/
