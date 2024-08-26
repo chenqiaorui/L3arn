@@ -15,3 +15,8 @@ https://youyq.pythonanywhere.com/software/
 [Windows 和 Office 激活工具](https://github.com/massgravel/Microsoft-Activation-Scripts)| office和windows激活开源脚本、windows iso下载
 
 
+## 截图工具
+https://www.photor.fun/
+
+
+
