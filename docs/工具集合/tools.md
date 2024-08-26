@@ -19,4 +19,9 @@ https://youyq.pythonanywhere.com/software/
 https://www.photor.fun/
 
 
+## 文本变成卡片
+
+https://memocard.net/
+
+
 
