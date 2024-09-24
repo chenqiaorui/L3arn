@@ -38,3 +38,39 @@ if ($flag = "010") {
   return 403;
 }
 ```
+
+
+## nginx 代理原第三方域名，使用80，配置host去使用; nginx所在机器ip加入了第三方白名单内
+
+server {
+	listen 80;
+	server_name g.api.disanfang.com;
+	
+	location / {
+		proxy_pass http://g.api.disanfang.com;
+		include proxy-disanfang.conf
+	}
+}
+
+
+## nginx 显示代理域名
+
+listen 443;
+server_name a.test.com;
+
+location  / {
+	proxy_pass http://static.example.com;
+}
+
+## nginx 以 root为基准，适配静态文件
+
+location /example/ {
+	root html/a.exmaple.com/;  # a.example.com后面有example目录   
+}
+
+## nginx 以最对路径适配静态文件
+
+location /example/ {
+	alias /tmp/;  # tmp后面有example目录   
+}
+
