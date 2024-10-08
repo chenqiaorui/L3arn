@@ -89,3 +89,6 @@ proxy_buffer_size 512k;
 proxy_buffers 8 512k;
 proxy_ignore_client_abort on;
 ```
+
+
+博客：https://www.cnblogs.com/xiongzaiqiren/p/16969984.html
