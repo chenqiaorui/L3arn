@@ -6,3 +6,5 @@
 
 避免影响服务做法： 1. iptables-save > /etc/iptables/rules.v4 ;  2. iptables-restore < /etc/iptables/rules.v4
 
+
+博客：https://www.cnblogs.com/ccit/p/14506871.html
