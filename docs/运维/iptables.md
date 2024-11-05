@@ -10,3 +10,5 @@
 博客：https://www.cnblogs.com/ccit/p/14506871.html
 
 https://www.cnblogs.com/xiongzaiqiren/p/iptables.html#:~:text=iptables
+
+Ubuntu iptables使用：https://www.dolingou.com/article/cloud-server-firewall-setup-ipv4-ipv6
