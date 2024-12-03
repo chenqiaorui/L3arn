@@ -20,3 +20,5 @@ gpt4: https://gpt4o.so/zh-CN
 Stable Diffusion 3 AI 图像生成器免费在线使用：https://stablediffusion3.net/zh-CN/app
 
 传图数学解题：https://math.bot/zh-CN
+
+https://aitdk.com/zh-CN/ sre提示词生成

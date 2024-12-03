@@ -27,3 +27,8 @@
 第十三章：结语
 
 参考：https://www.bilibili.com/read/cv21266100/   Udemy 视频课程，搬运到了 B 站，有中文字幕。通过 Node.js 项目，循序渐进学习 Docker 和 Kubernetes。
+
+
+### Docker到Kubernetes进阶
+
+https://www.qikqiak.com/k8s-book/

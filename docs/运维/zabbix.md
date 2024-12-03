@@ -1,13 +1,18 @@
-## 基础架构
+## Zabbix监控
 
-zabbix-agent收集监控主机的硬件资源 -> zabbix-server, 计算是否满足触发器条件，向用户发送通知 -> 数据库 -> zabbix-web展示监控数据
+用于主机、交换机、网络监控和UPS等资源监控。
 
-zabbix-web新增监控项 -> zabbix-server每1分钟进行探测监控项，存到数据库，所以新增监控项存在延迟。
+## 架构
 
-## zabbix-agent
+Zabbix agent安装到被监控的主机 -> 可主动上报数据到 Zabbix Server服务端 -> 上报数据存放到 Zabbix database数据库 -> 通过 Zabbix Web 界面管理数据。
 
-监控客户端数据，若它存在异常，zabbix-server会告警
+## Zabbix名称概念
 
-## 案例：监控某个端口是否异常
+主机：一台centos机器
 
-主机->监控项(持续监控)0代表端口处于未侦听状态 -> 触发器配置(状态变化出发告警的配置)状态为0就报警
+主机组：3台提供数据库服务的centos机器可归为一个主机组，主机归属于主机组
+
+### Zabbix web上添加主机
+
+参考：https://www.bilibili.com/read/cv16260714/?som_id_from=333.999.0.0
+
