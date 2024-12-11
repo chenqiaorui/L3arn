@@ -38,3 +38,15 @@ COMMIT
 3.3 telnet  192.168.2.22 81，返回 Connection refused，表明无服务运行
 3.4 telnet  192.168.2.22 82，返回 Not route to host，表明端口未放行
 ```
+
+
+## Ubuntu 使用 iptables
+```
+vi /etc/iptables/rules.v4
+
+service iptables restart
+
+service iptables stop
+
+service iptables status
+```
